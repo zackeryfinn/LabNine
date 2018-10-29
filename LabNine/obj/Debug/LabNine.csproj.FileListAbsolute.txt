@@ -1,0 +1,7 @@
+C:\Users\zacke\source\repos\LabNine\LabNine\bin\Debug\LabNine.exe.config
+C:\Users\zacke\source\repos\LabNine\LabNine\bin\Debug\LabNine.exe
+C:\Users\zacke\source\repos\LabNine\LabNine\bin\Debug\LabNine.pdb
+C:\Users\zacke\source\repos\LabNine\LabNine\obj\Debug\LabNine.csprojAssemblyReference.cache
+C:\Users\zacke\source\repos\LabNine\LabNine\obj\Debug\LabNine.csproj.CoreCompileInputs.cache
+C:\Users\zacke\source\repos\LabNine\LabNine\obj\Debug\LabNine.exe
+C:\Users\zacke\source\repos\LabNine\LabNine\obj\Debug\LabNine.pdb
