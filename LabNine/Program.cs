@@ -12,6 +12,8 @@ namespace LabNine
         {
             //This is the nested student list with name and facts 
             List<List<string>> studentList = new List<List<string>>();
+            // James - I think you are using this "null" entry as a means to handle the 0th index? you don't 
+            // have to do that, you can just handle the index in your code later when validating information.
             studentList.Add(new List<string>
             { "null" });
             studentList.Add(new List<string>
@@ -64,16 +66,21 @@ namespace LabNine
                     $"{studentList[studentNumber][0]}.");
                 Console.WriteLine();
                 var infoItem = 0;
+
+                // James - I like this usage of a string.Empty, nice.
                 string favoriteInfoInput = string.Empty;
                 bool repeatInfo = true;
 
                 /* Have user select the information they wish to know 
                     * and validate that input. Also set up loops for 
                     * user to repeat section if he or she wishes */
+                 // James -  Consider putting this entire while loop in it's own method then returning the user input number.
                 while (repeatInfo)
                 {   bool repeat = true;
                     while (repeat)
                     {
+                        // James - I really like the way you are handling this, pretty clever.  I would 
+                        // consider using a switch statement instead, it will make this much easier to read.
                         favoriteInfoInput = FavoriteInfoInput();
                         if (favoriteInfoInput.Equals
                             ("Hometown", StringComparison.OrdinalIgnoreCase))
@@ -130,6 +137,8 @@ namespace LabNine
                         }
                     }
                     //Section to put it all together here
+                    // James - I see that you are getting used to accessing the Index of a list, good job!
+                    // but as a programmer, you can completely handle if the user enters 0 instead ;)
                     Console.WriteLine($"{studentList[studentNumber][0]}'s " +
                         $"{favoriteInfoInput}: {studentList[studentNumber][infoItem]}");
                     Console.WriteLine();
@@ -143,6 +152,8 @@ namespace LabNine
             Console.WriteLine("Thank you, have a great day!");
             Console.ReadKey();
         }
+
+        // James - I really like that this is in it's own seperate method, good stuff.
         public static int GetStudentNumber()
         {
             Console.WriteLine("Welcome to Ye Olde Computer School Student information portal!");
